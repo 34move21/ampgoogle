@@ -1,300 +1,314 @@
 <!DOCTYPE html>
 <html amp lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>AMP by Google</title>
-    <link rel="canonical" href="/index.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-98699710-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
-    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" rel="stylesheet" type="text/css">
-    <script async custom-element="amp-pinterest" src="https://cdn.ampproject.org/v0/amp-pinterest-0.1.js"></script>
-    <style amp-custom>/* Font Awesome */
-      @font-face {
-      	font-family: 'FontAwesome';
-      	src: url('fonts/fontawesome-webfont.eot?v=4.0.3');
-      	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
-      	font-weight: normal;
-      	font-style: normal;
-      }
-      .font-awesome-missing .doc_header_social {
-      	display:none;
-      }
-      .fa {
-      	display: inline-block;
-      	font-family: FontAwesome;
-      	font-style: normal;
-      	font-weight: normal;
-      	line-height: 1;
-      	-webkit-font-smoothing: antialiased;
-      	-moz-osx-font-smoothing: grayscale;
-      }
-      .fa-facebook:before {
-      	content: "\f09a";
-      }
-      .fa-twitter:before {
-      	content: "\f099";
-      }
-      .fa-google-plus:before {
-      	content: "\f0d5";
-      }
-      .fa-linkedin:before {
-      	content: "\f0e1";
-      }
-      .fa-instagram:before {
-      	content: "\f16d";
-      }
-      .fa-dribbble:before {
-      	content: "\f17d";
-      }
-      .doc_header {
-      	height: 75vh;
-      	background-color: #3F51B5;
-      	overflow: hidden;
-      	position: relative;
-      }
-      .doc_header_bg {
-      	min-height: 100vh;
-      }
-      .doc_header_inner {
-      	position: absolute;
-      	width: 85vw;
-      	max-width: 64rem;
-      	top: 30%;
-      	left: 50%;
-      	transform: translate(-50%, -30%);
-      }
-      .standard_padding {
-      	box-sizing: border-box;
-      	padding: 6rem 3rem;
-      }
-      .amp-carousel-button {
-      	height: 53px;
-      	width: 38px;
-      	background-color: transparent;
-      }
-      .amp-carousel-button-prev {
-      	left: 38px;
-      	background-size: auto;
-      	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="38" height="53" viewBox="0 0 38 53"><path d="M0.622,26.14l36.353,25.992l0,-51.985l-36.353,25.993Z" fill="#e6e6e6" /></svg>');
-      }
-      .amp-carousel-button-next {
-      	right: 38px;
-      	background-size: auto;
-      	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="38" height="53" viewBox="0 0 38 53"><path d="M37.211,26.96l-36.353,25.993l0,-51.985l36.353,25.992Z" fill="#e6e6e6" /></svg>');
-      }
-      body {
-      	font-family: Inconsolata, monospace;
-      	font-size: 1rem;
-      	line-height: 2;
-        background-color: #9FA8DA;
-      	color: #e4d7d1;
-        text-align: center;
-      }
-      h2 {
-        margin-top: 0;
-        margin-bottom: 3rem;
-      }
-      .standard_width {
-      	width: 100%;
-      	max-width: 64rem;
-      	margin-left: auto;
-      	margin-right: auto;
-      }
-      .doc_header_inner {
-        border: 1rem solid rgba(255, 255, 255, 0.5);
-        background-color: #242320;
-        background-clip: padding-box;
-      	padding-top: 1rem;
-      	padding-bottom: 0.5rem;
-      	text-align: center;
-      }
-      h1.doc_header_title {
-        font: normal 4.625rem/1.1em 'Noto Sans', serif;
-      	/*font: normal 3.625rem/1.1em 'Noto Sans', serif;*/
-      	color: #e4d7d1;
-      	letter-spacing: -0.125rem;
-      	margin: 0 auto 1rem auto;
-      	text-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, .8);
-      }
-      p.doc_header_text {
-      	line-height: 1.9;
-      	color: #C2B6B2;
-      	margin: 0 auto;
-      	width: 70%;
-      	text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .5);
-      }
-      .doc_header_text span,
-      .doc_header_text a {
-      	color: #C5CAE9;
-      }
-      .doc_header_inner hr {
-      	width: 60%;
-      	margin: 1.125rem auto 1.5rem auto;
-      	border-color: #2F2D2E;
-      	border-color: rgba(150, 150, 150, .1);
-      	}
-      .doc_header_social {
-      	margin: 1.5rem 0;
-      	padding: 0;
-      	font-size: 1.875rem;
-      	text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .8);
-      }
-      .doc_header_social li {
-      	display: inline-block;
-      	margin: 0 1rem;
-      	padding: 0;
-      }
-      .doc_header_social li a {
-      	color: #BA7557;
-      }
-      .doc_header_social li a:hover {
-      	color: #d77144;
-      }
-      .video_wrap {
-      	background-color: #3F51B5;
-        border-top: 1rem solid rgba(0,0,0,0.2);
-        border-bottom: 1rem solid rgba(0,0,0,0.2);
-      }
-      .iframe_wrap {
-        background-color: #C5CAE9;
-        color: #2b2723;
-      }
-      .portfolio_wrap {
-      	background-color: #f5f1ef;
-        color: #372f28;
-      }
-      .portfolio_inner {
-      	padding: 4rem 6rem;
-      }
-      .portfolio_item {
-      	box-sizing: border-box;
-      	float: left;
-      	width: 25%;
-      	text-align: center;
-      	padding: 0.8rem;
-      }
-      .twitter_carousel_wrap {
-      	background-color: #283593;
-      	text-align: center;
-      }
-      .clearfix:before,
-      .clearfix:after {
-      	content: " ";
-      	display: table;
-      }
-      .clearfix:after {
-      	clear: both;
-      }
-      @media (max-width: 60rem){
-      	.portfolio_inner {
-      		padding: 4rem 2rem;
-      	}
-      }
-      @media (max-width: 45rem){
-      	.portfolio_item {
-      		width: 50%;
-      	}
-      }
-      @media (max-width: 35rem){
-      	h1.doc_header_title {
-      		font-size: 10vw;
-      	}
-      }
-  </style>
-  
-  </head>
-  <body>
-    <div class="doc_header">
-      <amp-img src="images/google-amp.png" width="2264" height="1504" layout="responsive" class="doc_header_bg"></amp-img>
-      <div class="doc_header_inner">
-        <h1 class="doc_header_title">Accelerated Mobile Pages</h1>
-        <p class="doc_header_text">This is my web about AMP powered by Google,
-          <br>you can visit web of <a href="https://34move21.github.io/">My profile</a>.<br>Or
-          <br>My social media below.</p>
-        <ul class="doc_header_social">
-          <li><a href="https://linkedin.com/in/iskandardonny"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/iskdonny"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/iskdoi"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/34move21/?hl=en"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="video_wrap">
-      <div class="standard_width standard_padding">
-        <h2>Start with AMP</h2>
-        <amp-youtube data-videoid="lBTCB7yLs8Y" layout="responsive" width="350" height="190"></amp-youtube>
-      </div>
-    </div>
-    <div class="iframe_wrap standard_width standard_padding">
-      <h2>AMP sample code</h2>
-      <amp-iframe width="1100" height="600" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" layout="responsive" frameborder="0" src="https://codepen.io/t73biz/pen/rOwMrB/?height=600&theme-id=0&default-tab=css,result&embed-version=2"></amp-iframe>
-    </div>
-    <div class="portfolio_wrap">
-      <div class="standard_width">
-        <div class="portfolio_inner clearfix">
-          <h2>Pinterest AMP</h2>
-          <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="0" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/451063718909915774/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="1" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/180566266290419060/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="2" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/450008187747304687/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="3" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/8796161752328531/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="4" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/143904150575414354/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="5" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/692076667707543415/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="6" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/154389093454492307/" layout="responsive">
-            </amp-pinterest>
-          </div>
-          <div class="portfolio_item">
-            <amp-pinterest on="tap:lightbox1" role="button" tabindex="7" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/209065607680823509/" layout="responsive">
-            </amp-pinterest>
-        </div>
-      </div>
-    </div>
-    <div class="twitter_carousel_wrap">
-      <div class="standard_width standard_padding">
-        <h2>Listen other AMP tweets</h2>
-        <amp-carousel width="700" height="600" type="slides" delay="3000"  autoplay layout="responsive">
-          <amp-twitter width="300" height="250" data-tweetid="731500367880552449"></amp-twitter>
-          <amp-twitter width="300" height="250" data-tweetid="732331618325676032"></amp-twitter>
-          <amp-twitter width="300" height="250" data-tweetid="731590709497712640"></amp-twitter>
-        </amp-carousel>
-      </div>
-    </div>
-    <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>AMP by Google</title>
+	    <link rel="canonical" href="/index.html">
+	    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		
+	    <script async custom-element="amp-analytics"
+	    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+	    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+	    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+	    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+	    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+	    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	    <script async src="https://cdn.ampproject.org/v0.js"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" rel="stylesheet" type="text/css">
+	    <script async custom-element="amp-pinterest" src="https://cdn.ampproject.org/v0/amp-pinterest-0.1.js"></script>
+	    <style amp-custom>/* Font Awesome */
+	      @font-face {
+	      	font-family: 'FontAwesome';
+	      	src: url('fonts/fontawesome-webfont.eot?v=4.0.3');
+	      	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+	      	font-weight: normal;
+	      	font-style: normal;
+	      }
+	      .font-awesome-missing .doc_header_social {
+	      	display:none;
+	      }
+	      .fa {
+	      	display: inline-block;
+	      	font-family: FontAwesome;
+	      	font-style: normal;
+	      	font-weight: normal;
+	      	line-height: 1;
+	      	-webkit-font-smoothing: antialiased;
+	      	-moz-osx-font-smoothing: grayscale;
+	      }
+	      .fa-facebook:before {
+	      	content: "\f09a";
+	      }
+	      .fa-twitter:before {
+	      	content: "\f099";
+	      }
+	      .fa-google-plus:before {
+	      	content: "\f0d5";
+	      }
+	      .fa-linkedin:before {
+	      	content: "\f0e1";
+	      }
+	      .fa-instagram:before {
+	      	content: "\f16d";
+	      }
+	      .fa-dribbble:before {
+	      	content: "\f17d";
+	      }
+	      .doc_header {
+	      	height: 75vh;
+	      	background-color: #3F51B5;
+	      	overflow: hidden;
+	      	position: relative;
+	      }
+	      .doc_header_bg {
+	      	min-height: 100vh;
+	      }
+	      .doc_header_inner {
+	      	position: absolute;
+	      	width: 85vw;
+	      	max-width: 64rem;
+	      	top: 30%;
+	      	left: 50%;
+	      	transform: translate(-50%, -30%);
+	      }
+	      .standard_padding {
+	      	box-sizing: border-box;
+	      	padding: 6rem 3rem;
+	      }
+	      .amp-carousel-button {
+	      	height: 53px;
+	      	width: 38px;
+	      	background-color: transparent;
+	      }
+	      .amp-carousel-button-prev {
+	      	left: 38px;
+	      	background-size: auto;
+	      	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="38" height="53" viewBox="0 0 38 53"><path d="M0.622,26.14l36.353,25.992l0,-51.985l-36.353,25.993Z" fill="#e6e6e6" /></svg>');
+	      }
+	      .amp-carousel-button-next {
+	      	right: 38px;
+	      	background-size: auto;
+	      	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="38" height="53" viewBox="0 0 38 53"><path d="M37.211,26.96l-36.353,25.993l0,-51.985l36.353,25.992Z" fill="#e6e6e6" /></svg>');
+	      }
+	      body {
+	      	font-family: Inconsolata, monospace;
+	      	font-size: 1rem;
+	      	line-height: 2;
+	        background-color: #9FA8DA;
+	      	color: #e4d7d1;
+	        text-align: center;
+	      }
+	      h2 {
+	        margin-top: 0;
+	        margin-bottom: 3rem;
+	      }
+	      .standard_width {
+	      	width: 100%;
+	      	max-width: 64rem;
+	      	margin-left: auto;
+	      	margin-right: auto;
+	      }
+	      .doc_header_inner {
+	        border: 1rem solid rgba(255, 255, 255, 0.5);
+	        background-color: #242320;
+	        background-clip: padding-box;
+	      	padding-top: 1rem;
+	      	padding-bottom: 0.5rem;
+	      	text-align: center;
+	      }
+	      h1.doc_header_title {
+	        font: normal 4.625rem/1.1em 'Noto Sans', serif;
+	      	/*font: normal 3.625rem/1.1em 'Noto Sans', serif;*/
+	      	color: #e4d7d1;
+	      	letter-spacing: -0.125rem;
+	      	margin: 0 auto 1rem auto;
+	      	text-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, .8);
+	      }
+	      p.doc_header_text {
+	      	line-height: 1.9;
+	      	color: #C2B6B2;
+	      	margin: 0 auto;
+	      	width: 70%;
+	      	text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .5);
+	      }
+	      .doc_header_text span,
+	      .doc_header_text a {
+	      	color: #C5CAE9;
+	      }
+	      .doc_header_inner hr {
+	      	width: 60%;
+	      	margin: 1.125rem auto 1.5rem auto;
+	      	border-color: #2F2D2E;
+	      	border-color: rgba(150, 150, 150, .1);
+	      	}
+	      .doc_header_social {
+	      	margin: 1.5rem 0;
+	      	padding: 0;
+	      	font-size: 1.875rem;
+	      	text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .8);
+	      }
+	      .doc_header_social li {
+	      	display: inline-block;
+	      	margin: 0 1rem;
+	      	padding: 0;
+	      }
+	      .doc_header_social li a {
+	      	color: #BA7557;
+	      }
+	      .doc_header_social li a:hover {
+	      	color: #d77144;
+	      }
+	      .video_wrap {
+	      	background-color: #3F51B5;
+	        border-top: 1rem solid rgba(0,0,0,0.2);
+	        border-bottom: 1rem solid rgba(0,0,0,0.2);
+	      }
+	      .iframe_wrap {
+	        background-color: #C5CAE9;
+	        color: #2b2723;
+	      }
+	      .portfolio_wrap {
+	      	background-color: #f5f1ef;
+	        color: #372f28;
+	      }
+	      .portfolio_inner {
+	      	padding: 4rem 6rem;
+	      }
+	      .portfolio_item {
+	      	box-sizing: border-box;
+	      	float: left;
+	      	width: 25%;
+	      	text-align: center;
+	      	padding: 0.8rem;
+	      }
+	      .twitter_carousel_wrap {
+	      	background-color: #283593;
+	      	text-align: center;
+	      }
+	      .clearfix:before,
+	      .clearfix:after {
+	      	content: " ";
+	      	display: table;
+	      }
+	      .clearfix:after {
+	      	clear: both;
+	      }
+	      @media (max-width: 60rem){
+	      	.portfolio_inner {
+	      		padding: 4rem 2rem;
+	      	}
+	      }
+	      @media (max-width: 45rem){
+	      	.portfolio_item {
+	      		width: 50%;
+	      	}
+	      }
+	      @media (max-width: 35rem){
+	      	h1.doc_header_title {
+	      		font-size: 10vw;
+	      	}
+	      }
+	  </style>
+	  
+	</head>
+	<body>
+		<amp-analytics type="googleanalytics">
+			<script type="application/json">
+				{
+				  "vars": {
+				    "account": "UA-98699710-1"
+				  },
+				  "triggers": {
+				    "trackClickOnHeader" : {
+				      "on": "click",
+				      "selector": "#header",
+				      "request": "event",
+				      "vars": {
+				        "eventCategory": "ui-components",
+				        "eventAction": "header-click"
+				      }
+				    }
+				  }
+				}
+			</script>
+		</amp-analytics>
+	    <div class="doc_header">
+	      	<amp-img src="images/google-amp.png" width="2264" height="1504" layout="responsive" class="doc_header_bg"></amp-img>
+	      	<div class="doc_header_inner">
+	        	<h1 class="doc_header_title">Accelerated Mobile Pages</h1>
+	        	<p class="doc_header_text">This is my web about AMP powered by Google,
+	          <br>you can visit web of <a href="https://34move21.github.io/">My profile</a>.<br>Or
+	          <br>My social media below.</p>
+	        	<ul class="doc_header_social">
+	          	<li><a href="https://linkedin.com/in/iskandardonny"><i class="fa fa-linkedin"></i></a></li>
+	          	<li><a href="https://www.facebook.com/iskdonny"><i class="fa fa-facebook"></i></a></li>
+	          	<li><a href="https://twitter.com/iskdoi"><i class="fa fa-twitter"></i></a></li>
+	          	<li><a href="https://www.instagram.com/34move21/?hl=en"><i class="fa fa-instagram"></i></a></li>
+	        	</ul>
+	      	</div>
+	    </div>
+	    <div class="video_wrap">
+	      	<div class="standard_width standard_padding">
+	        	<h2>Start with AMP</h2>
+	        	<amp-youtube data-videoid="lBTCB7yLs8Y" layout="responsive" width="350" height="190"></amp-youtube>
+	      	</div>
+	    </div>
+	    <div class="iframe_wrap standard_width standard_padding">
+	      	<h2>AMP sample code</h2>
+	      	<amp-iframe width="1100" height="600" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" layout="responsive" frameborder="0" src="https://codepen.io/t73biz/pen/rOwMrB/?height=600&theme-id=0&default-tab=css,result&embed-version=2"></amp-iframe>
+	    </div>
+	    <div class="portfolio_wrap">
+	    	<div class="standard_width">
+	        	<div class="portfolio_inner clearfix">
+	          		<h2>Pinterest AMP</h2>
+	          		<amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+	          		<div class="portfolio_item">
+	            		<amp-pinterest on="tap:lightbox1" role="button" tabindex="0" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/451063718909915774/" layout="responsive">
+	            		</amp-pinterest>
+	          		</div>
+	          		<div class="portfolio_item">
+	            		<amp-pinterest on="tap:lightbox1" role="button" tabindex="1" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/180566266290419060/" layout="responsive">
+	            		</amp-pinterest>
+	          		</div>
+	          		<div class="portfolio_item">
+	            		<amp-pinterest on="tap:lightbox1" role="button" tabindex="2" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/450008187747304687/" layout="responsive">
+	            		</amp-pinterest>
+	          		</div>
+	          		<div class="portfolio_item">
+		            	<amp-pinterest on="tap:lightbox1" role="button" tabindex="3" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/8796161752328531/" layout="responsive">
+		            	</amp-pinterest>
+	          		</div>
+		          	<div class="portfolio_item">
+			            <amp-pinterest on="tap:lightbox1" role="button" tabindex="4" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/143904150575414354/" layout="responsive">
+			            </amp-pinterest>
+		          	</div>
+		          	<div class="portfolio_item">
+		            	<amp-pinterest on="tap:lightbox1" role="button" tabindex="5" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/692076667707543415/" layout="responsive">
+		            	</amp-pinterest>
+		          	</div>
+		          	<div class="portfolio_item">
+			            <amp-pinterest on="tap:lightbox1" role="button" tabindex="6" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/154389093454492307/" layout="responsive">
+			            </amp-pinterest>
+		          	</div>
+		          	<div class="portfolio_item">
+			            <amp-pinterest on="tap:lightbox1" role="button" tabindex="7" width="350" height="330" data-do="embedPin"  data-url="https://id.pinterest.com/pin/209065607680823509/" layout="responsive">
+			            </amp-pinterest>
+		        	</div>
+	      		</div>
+	    	</div>
+	    </div>
+	    <div class="twitter_carousel_wrap">
+	      	<div class="standard_width standard_padding">
+	        	<h2>Listen other AMP tweets</h2>
+	        	<amp-carousel width="700" height="600" type="slides" delay="3000"  autoplay layout="responsive">
+	          		<amp-twitter width="300" height="250" data-tweetid="731500367880552449"></amp-twitter>
+	          		<amp-twitter width="300" height="250" data-tweetid="732331618325676032"></amp-twitter>
+	          		<amp-twitter width="300" height="250" data-tweetid="731590709497712640"></amp-twitter>
+	        	</amp-carousel>
+	      	</div>
+	    </div>
+	    <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
+	</body>
 </html>
